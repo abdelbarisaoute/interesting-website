@@ -27,10 +27,16 @@ This website is configured to deploy automatically to GitHub Pages when changes 
 
 ### Setup GitHub Pages:
 
-1. Go to your repository settings
-2. Navigate to "Pages" section
-3. Set source to "GitHub Actions"
-4. The workflow will automatically deploy your site
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" section in the left sidebar
+3. Under "Build and deployment":
+   - **Source**: Select "GitHub Actions"
+4. Save the settings
+5. Push any changes to the `main` branch to trigger a deployment
+6. The workflow will automatically build and deploy your site
+7. Your site will be available at: `https://<username>.github.io/<repository-name>/`
+
+**Note**: Make sure your repository is public or you have GitHub Pro/Enterprise for private repo Pages deployment.
 
 ## Local Development
 
