@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Getting Started with Web Development",
+        "description": "A comprehensive guide to starting your journey in web development, covering HTML, CSS, and JavaScript basics.",
+        "date": "2024-01-15",
+        "content": "Full article content here..."
+    },
+    {
+        "id": 2,
+        "title": "The Power of Minimalistic Design",
+        "description": "Exploring how minimalism in web design can improve user experience and site performance.",
+        "date": "2024-02-20",
+        "content": "Full article content here..."
+    },
+    {
+        "id": 3,
+        "title": "Building Dynamic Websites with JavaScript",
+        "description": "Learn how to create interactive and dynamic websites using modern JavaScript techniques.",
+        "date": "2024-03-10",
+        "content": "Full article content here..."
+    },
+    {
+        "id": 4,
+        "title": "Deploying Static Sites with GitHub Pages",
+        "description": "Step-by-step guide to deploying your static website for free using GitHub Pages.",
+        "date": "2024-04-05",
+        "content": "Full article content here..."
+    }
+]

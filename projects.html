@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Home</a>
+            <ul class="nav-menu">
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Projects</h1>
+            <p>Check out my latest work and side projects.</p>
+        </section>
+
+        <div class="search-container">
+            <input type="text" id="projectSearch" placeholder="Search projects..." class="search-input">
+        </div>
+
+        <section id="projectsGrid" class="projects-grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search functionality
+        document.getElementById('projectSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const projects = document.querySelectorAll('.project-card');
+            
+            projects.forEach(project => {
+                const title = project.querySelector('h3').textContent.toLowerCase();
+                const description = project.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
