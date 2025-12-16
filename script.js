@@ -3,13 +3,17 @@ let articlesData = [];
 let projectsData = [];
 
 // Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-    loadData();
+document.addEventListener('DOMContentLoaded', async function() {
+    await loadData();
     
     // Check which page we're on and load appropriate content
     const path = window.location.pathname;
     if (path.includes('index.html') || path === '/') {
         loadHomePage();
+    } else if (path.includes('articles.html')) {
+        loadArticles();
+    } else if (path.includes('projects.html')) {
+        loadProjects();
     }
 });
 
