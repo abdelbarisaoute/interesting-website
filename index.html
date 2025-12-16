@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Home</a>
+            <ul class="nav-menu">
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to My Personal Website</h1>
+            <p>Explore my articles, projects, and learn more about me.</p>
+        </section>
+
+        <section class="search-section">
+            <h2>Search</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search articles and projects..." class="search-input">
+                <button onclick="performSearch()" class="search-btn">Search</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </section>
+
+        <section class="preview-section">
+            <div class="preview-card">
+                <h3>Latest Articles</h3>
+                <div id="latestArticles"></div>
+            </div>
+            <div class="preview-card">
+                <h3>Featured Projects</h3>
+                <div id="featuredProjects"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
